@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #img_container{
+            width:350px;
+            height:350px;
+            box-shadow:0 0 15px black;
+            margin:100px auto;
+            border:5px solid white;
+            border-radius:50%;           
+            overflow:hidden;
+        }
+        #img_container img{
+            width:inherit;
+            height:inherit;
+            border-radius:50%;            
+            transition:all 3s;
+        }
+        #img_container:hover img{
+            transform:scale(1.4,1.4);
+        }
+    </style>
+    <title>CSS | Zoom</title>
+</head>
+<body>
+    <div id="img_container">
+        <img src="../HTML/images/food/burgers-4.jpg" alt="">
+    </div>
+</body>
+</html>

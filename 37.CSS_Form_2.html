@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <style>
+        #register_form_section
+        {
+            background: linear-gradient(45deg,black,darkred);
+            width:300px;
+            color:white;
+            text-align:center;
+            border-radius:15px;
+            box-shadow:0 0 10px black;
+            padding:10px;
+            margin:80px auto;
+        }
+        input,select{
+            font-size:20px;
+            background:transparent;
+            border:none;
+            border-bottom:3px solid white;
+            padding:4px;
+            color:white;
+        }        
+        div{
+            margin-bottom:25px;
+        }
+        #register_form_article h2{
+            color:yellow;
+            text-shadow:0 0 10px yellow;
+            font-family:'old english text mt', serif
+        }
+        input[type="submit"]{
+            width:70%;
+            background:linear-gradient(45deg,yellow, orangered);
+            margin-top:10px;
+            border:none;
+            padding:10px;
+            border-radius:15px;            
+        }
+        input[type="submit"]:hover{
+            box-shadow:0 0 10px white;           
+        }
+        ::placeholder{
+            color:rgb(81, 228, 228);
+            font-family:'Arial',serif;
+        }
+        select {
+            color:rgb(81, 228, 228);;
+        }
+        .fa-user-circle{
+            font-size:80px;
+            margin-top:-50px;
+            background-color:black;
+            border-radius:50%;
+            border:5px solid black;
+            box-shadow:0 0 10px black;
+        }
+    </style>
+    <title>Regsitration Form</title>
+</head>
+<body>
+    <section id="register_form_section">
+        <!-- registration form-->
+        <article id="register_form_article">
+            <i class="fa fa-user-circle"></i>
+            <h2>Register Here</h2>
+            <form action="" class="register_form">
+                <div>                    
+                    <input type="text" id="input_uid" name="username" placeholder="User Name">
+                </div>
+                <div>                    
+                    <input type="password" id="input_pwd" name="password" placeholder="Password">
+                </div>  
+                <div>                   
+                    <input type="email" id="input_email" name="email" placeholder="Email">
+                </div>              
+                <div>                    
+                    <input type="text" id="input_mobile" name="mobile" placeholder="Mobile">
+                </div>
+                <div>                    
+                    <select name="desig" id="select_desig" name="desig">
+                        <option value="">select a designation</option>
+                        <option>Project Manager</option>
+                        <option>Project Architect</option>
+                        <option>Business Analyst</option>
+                        <option>Sr. Software Enginner</option>
+                        <option>Softwabe Engineer</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </article>
+    </section>
+</body>
+</html>

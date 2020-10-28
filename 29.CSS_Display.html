@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 20px 40px;
+            font-family: 'comic sans ms', serif;
+            margin-bottom:400px;
+        }
+        div{
+            margin-bottom:50px;
+        }
+        div h3 {
+            background-color: maroon;
+            color: white;
+            padding: 10px;
+            border-radius: 15px;
+            display: inline;
+        }
+        span{
+            background-color:orangered;
+            padding:10px 30px;
+            border-radius:15px;
+            display:block;
+            margin-bottom:10px;
+            width:300px;
+        }
+        a{
+            text-decoration: none;
+            font-size:20px;
+            font-family:'Arial',serif;
+            font-weight:700;
+            background:linear-gradient(45deg,darkslategray,blueviolet);
+            color:white;
+            display:block;
+            margin-bottom:10px;
+            padding:12px;
+            width:190px;
+            text-align:center;
+            border-radius:15px;
+        }
+        a:hover{
+            background:linear-gradient(45deg,black,darkred)
+        }
+        form{
+            background-color:teal;
+            padding:20px;            
+        }
+        form input{
+            font-size:20px;
+            display:block;
+            margin-bottom:12px;
+        }
+        ul{
+            list-style-type: none;
+            padding-left:0px;
+        }
+        ul li{
+            background-color:darkmagenta;
+            color:white;
+            padding:12px;
+            width:180px;
+            text-align:center;
+            font-size:22px;
+            margin-right:40px;
+            display:inline-block;
+        }
+        div.container{
+            background:teal;
+            padding:15px;
+            text-align:center;
+            border-radius:20px;
+            box-shadow:0 0 10px black;
+        }
+        div.container div{
+            background:linear-gradient(45deg,black,darkblue);
+            color:white;
+            width:200px;
+            padding:10px;
+            border-radius:12px;
+            display:inline-block;
+            margin:20px;          
+        }
+        #head1:hover{
+            color:yellow;
+            visibility:hidden;            
+        }
+    </style>
+    <title>CSS Display</title>
+</head>
+
+<body>
+    <!-- converting a block element to inline element-->
+    <div>
+        <h3>HTML</h3>
+        <h3>CSS</h3>
+        <h3>Java Script</h3>
+        <h3>jQuery</h3>
+        <h3>Bootstrap</h3>
+    </div>
+
+    <!-- converting an inline element to block element-->
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusamus laborum nulla est quae excepturi magni neque sequi quibusdam dolorem odit enim facilis asperiores sunt hic sed libero exercitationem ratione consequuntur velit debitis cumque labore, fugit deserunt. Provident, deserunt reiciendis.</p>
+
+        <span>1. Lorem ipsum dolor sit amet.</span>
+        <span>2. Lorem ipsum dolor sit amet.</span>
+        <span>3. Lorem ipsum dolor sit amet.</span>
+        <span>4. Lorem ipsum dolor sit amet.</span>
+        <span>5. Lorem ipsum dolor sit amet.</span>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corrupti praesentium fuga sit et vero voluptatem non veritatis asperiores quaerat illum accusantium modi tempora in, incidunt doloremque natus beatae. Amet!
+        </p>
+    </div>
+
+    <!-- converting an inline element to block element-->
+    <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div>
+        <form action="">
+            <input type="text" size=20 placeholder="enter user name">
+            <input type="password" size=20 placeholder="enter password">
+            <input type="submit" value="L o g i n">
+        </form>
+    </div>
+
+    <!-- list items as inlint elements -->
+    <div>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java Script</li>
+            <li>jQuery</li>
+            <li>Bootstrap</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, dignissimos molestias cupiditate amet numquam assumenda eos vitae in laudantium nihil fugiat eligendi placeat voluptatibus corrupti, porro obcaecati tempore. Numquam, dolores!
+        </div>
+
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, dignissimos molestias cupiditate amet numquam assumenda eos vitae in laudantium nihil fugiat eligendi placeat voluptatibus corrupti, porro obcaecati tempore. Numquam, dolores!
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, dignissimos molestias cupiditate amet numquam assumenda eos vitae in laudantium nihil fugiat eligendi placeat voluptatibus corrupti, porro obcaecati tempore. Numquam, dolores!
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, dignissimos molestias cupiditate amet numquam assumenda eos vitae in laudantium nihil fugiat eligendi placeat voluptatibus corrupti, porro obcaecati tempore. Numquam, dolores!
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, dignissimos molestias cupiditate amet numquam assumenda eos vitae in laudantium nihil fugiat eligendi placeat voluptatibus corrupti, porro obcaecati tempore. Numquam, dolores!
+        </div>                                
+    </div>
+
+    <!-- to use display:none-->
+    <div style="background-color:maroon;color:white;padding:10px">
+        <h1>This is One</h1>
+        <h1 style="display:none">This is Two</h1>
+        <h1>This is Three</h1>
+    </div>
+    <div style="background-color:maroon;color:white;padding:10px">
+        <h1>This is One</h1>
+        <h1 style="visibility:hidden">This is Two</h1>
+        <h1>This is Three</h1>
+    </div>
+
+    <div style="background-color:maroon;color:white;padding:10px">
+        <h1>This is One</h1>
+        <h1 id="head1">This is Two</h1>
+        <h1>This is Three</h1>
+    </div>    
+</body>
+
+</html>
