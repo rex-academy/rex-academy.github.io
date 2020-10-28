@@ -1,0 +1,60 @@
+body{
+    margin:0px;
+}
+.main-nav{
+    background-color:black;
+    color:white;
+    padding:13px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-nav h2{
+    margin:0px;
+}
+.main-nav .nav-items a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    padding:7px 30px;
+}
+.main-nav .nav-items a:hover{
+    background-color:orange;
+    box-shadow:0 0 10px white;
+    border-radius:20px;
+    color:black;
+}
+/* main content section settings*/
+.main-content
+{
+    background:white url('images/group.jpg') no-repeat scroll center;
+    height:100vh;
+    color:white;
+}
+.main-content-wrapper{
+    background-color:rgba(0,0,0,0.7);
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main-content-wrapper h1{
+    font-size:60px;
+    margin:0px;
+}
+.main-content-wrapper p{
+    font-size:20px;
+    font-family:'comic sans ms',serif;
+    width:90%;
+}
+.btn-primary{
+    background-color:orange;
+    padding:10px 40px;
+    font-size:18px;
+    border:none;
+    border-radius:15px;    
+}
+.btn-primary:hover{
+    box-shadow:0 0 10px white;
+}
