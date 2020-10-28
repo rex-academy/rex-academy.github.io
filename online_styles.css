@@ -1,0 +1,38 @@
+body{
+    margin:0px;
+    background:black url('images/background1.jpg');
+}
+h1{
+    font-family:'Old English Text MT',serif;
+    text-align:center;
+    color:white;
+    text-shadow:0 0 10px red;
+}
+fieldset{
+    width:95%;
+    margin:auto;
+    background:rgba(0,0,0,0.7);
+    border-radius:0px 20px 0px 20px;
+    margin-bottom:30px;
+}
+table{
+    width:100%;
+    margin:auto;
+    color:white;
+}
+tr{
+    height:35px;
+}
+table,input,textarea,select,legend{
+    font-size:18px;
+}
+legend{
+    background:url('images/background2.jpg');
+    color:white;
+    padding:7px 35px;
+    border-radius:40px 0px 40px 0px;
+    font-family:'Old English Text MT',serif;
+}
+fieldset,legend{
+    box-shadow:0 0 10px white;
+}
